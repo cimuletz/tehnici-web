@@ -1,0 +1,58 @@
+#hamburger {
+  display: block;
+}
+
+ul.meniu {
+  display: block;
+  position: absolute;
+  visibility: hidden;
+  width: 100%;
+  opacity: 0;
+  -webkit-transform: scale(0, 0);
+          transform: scale(0, 0);
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+  -webkit-transition: all 500ms linear;
+  transition: all 500ms linear;
+}
+
+nav ul.meniu li {
+  width: 100%;
+}
+
+nav ul.meniu > li ul {
+  display: block;
+  position: absolute;
+  width: 100%;
+  z-index: 20;
+}
+
+nav ul.meniu > li a::after {
+  height: 0px;
+}
+
+ul.meniu div, ul.meniu a {
+  -webkit-transition: all 700ms linear;
+  transition: all 700ms linear;
+}
+
+ul.meniu div:hover, ul.meniu a:hover {
+  background: var(--culoare-2);
+  color: black;
+}
+
+#check-menu:checked + ul.meniu {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+  opacity: 1;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  visibility: visible;
+}
+
+#acasa {
+  display: none;
+}
+/*# sourceMappingURL=nav-500.css.map */

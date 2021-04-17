@@ -1,0 +1,109 @@
+body{
+    --menuheight: 3rem;
+}
+nav{
+    height: var(--menuheight);
+    width: 100%;
+    top: 0;
+    padding: 0;
+    background: var(--culoare-main);
+    z-index:10;
+    position:sticky;
+
+    ul.meniu{
+        ul{
+            display:none;
+            position:absolute;
+            width:100%;
+        }
+        >li{
+            float:left;
+            width:100px;
+	        position:relative;
+            
+            >ul{
+                display:block;
+                transform: scale(1, 0);
+                visibility: hidden;
+                transition: transform 500ms linear;
+            }
+
+            &:hover{
+                >ul{
+                    transform: scale(1, 1);
+                    visibility: visible;
+                }
+            }
+        }
+        li{
+            text-align:center;
+            list-style-type: none;
+            background: var(--culoare-main);
+            cursor:pointer;
+            a, div{
+                text-decoration: none;
+                color:white;
+                display: block;
+                font-weight:bold;
+                height:var(--menuheight);
+                line-height:var(--menuheight);
+            }
+        }
+    }
+    ul, li{
+        padding:0;
+        margin:0;
+    }
+}
+
+ul.meniu{
+    >li>a{
+            &::after{
+            content: '';
+            position: relative;
+            bottom: 7px;
+            background: linear-gradient(to right, var(--culoare-main) 10%, var(--culoare-secundara) 60%);
+            display:block;
+            height:7px;
+            opacity: 0;
+            transition: opacity 500ms ease-out;
+            }
+            &:hover::after{
+                opacity: 1;
+            }
+        }
+    ul a:hover{
+        color: black;
+        background:var(--culoare-2);
+    }
+    ul a{
+        transition: background 700ms linear;
+        transition: color 500ms linear;
+    }
+}
+
+.fas{
+    display: none;
+}
+
+#hamburger{
+    display: none;
+    height: var(--menuheight);
+}
+#check-menu{
+    display: none;
+}
+#hamburger img{
+    height:100%;
+    width:auto;
+  }
+
+
+@keyframes menu_grow{
+ 0%{
+    opacity:0;
+ } 
+100%{
+	opacity:1;
+    }
+}

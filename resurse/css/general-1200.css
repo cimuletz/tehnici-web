@@ -1,0 +1,38 @@
+html{
+    font-size: 14px;
+}
+
+#banner{
+    visibility: hidden !important;
+}
+
+#grid-pagina{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-areas:"welcome   welcome" 
+                        "orar orar"
+                        "calendar anunturi"
+                        "utilizatori server"
+                        "stats stats"
+                        "utile utile"
+                        "intrebari intrebari";
+    padding: 4%;
+    grid-gap: 2rem;
+}
+
+#prezentare{
+    grid-area: welcome;
+}
+
+iframe{
+    max-width: 700px;
+    width: 50vw;
+}
+
+#containertabel{
+    overflow-x: scroll;
+}
+
+#banner{
+    visibility: hidden;
+}

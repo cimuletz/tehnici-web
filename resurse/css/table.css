@@ -1,0 +1,28 @@
+#containertabel{
+    border: 2px solid black;
+    border-collapse: collapse;
+    border-radius: 5px;
+    width: 70%;
+    overflow: hidden;
+}   
+#tabel-orar{
+    width: 100%;
+}
+#tabel-orar td{
+    text-align: center;
+}
+tbody tr:nth-child(even){
+    background: var(--culoare-iframe);
+}
+tbody tr:nth-child(odd){
+    background: var(--culoare-3);
+}
+#weekend{
+    background: rgb(185, 180, 211);
+}
+#sapt{
+    background: rgb(185, 180, 211);
+}
+tbody tr:hover{
+    background: rgb(162, 153, 213);
+}

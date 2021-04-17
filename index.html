@@ -5,56 +5,96 @@
         <meta name = "author" content = "Alex-Mihai Serafim">
         <meta name = "keywords" content = "Materiale de construcții, Depozit Vaslui, Big Vaslui">
         <meta name = "description" content = "Depozit materiale de construcții">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>BIG Vaslui</title>                                                           <!-- Task 3 -->
-        <link rel="icon" type="image/png" href="/icon.png"/>              <!-- Task 4 -->
+        <script src="https://kit.fontawesome.com/5fc77b2060.js" crossorigin="anonymous"></script>
+        <link rel="icon" type="image/png" href="./resurse/imagini/icon.png"/>              <!-- Task 4 -->
+        <link rel = "stylesheet" href = "./resurse/css/general.css" type = "text/css"/>
+        <link rel = "stylesheet" href = "./resurse/css/general-1200.css" type = "text/css" media = "screen and (max-width:1200px)"/> 
+        <link rel = "stylesheet" href="./resurse/css/general-500.css" type="text/css" media = "screen and (max-width:500px)"/>
+        <link rel = "stylesheet" href = "./resurse/css/nav-1200.css" type = "text/css" media = "screen and (max-width: 1200px)"/>
+        <link rel = "stylesheet" href = "./resurse/css/nav-500.css" type = "text/css" media = "screen and (max-width: 650px)"/>
     </head>
     <body>
+    
         <header>        <!-- Task 5 -->
-            <h1>
-                BIG Vaslui
-            </h1>
-            <nav>                   <!-- Task 6 -->
-                <ul>
-                    <li> <a href = "#ac">Acasă</a></li>
-                    <li> Produse</li>
-                    <li>
-                        <ul>
-                            <li>
-                                <a href = "#con">Construcții</a>
-                                <a href = "#san">Sanitare</a>
-                                <a href = "#fin">Finisaje</a>
-                                <a href = "#une">Unelte</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li> <a href = "#se">Servicii</a></li>
-                    <li> <a href = "#co">Contact</a> </li>
-                </ul>   
-            </nav>
+            <div class = "logo">
+                <img src = "resurse/imagini/logo.png" />
+            </div>
         </header>
+
+        <nav>   
+
+            <label id = "hamburger" for = "check-menu">
+                <img src = "resurse/imagini/hamburger.png" alt = "menu">
+            </label>
+            <input id = "check-menu" type = "checkbox">
+            <ul class = "meniu">
+                <li> <i class="fas fa-home"></i> <div id = "acasa">Acasă</div>
+                        <ul>
+                            <li> <a href = "#prezentare">Prezentare</a></li>
+                            <li> <a href = "#calendar">Anunțuri</a></li>
+                            <li> <a href = "#orar">Program</a></li>
+                            <li> <a href = "#utile">Utile</a></li>
+                            <li> <a href = "#intrebari">Întrebări</a></li>
+                        </ul>
+                </li>
+                <li><div>Produse</div>
+                        <ul>
+                            <li> <a href = "#constructii">Construcții</a></li>
+                            <li> <a href = "#sanitare">Sanitare</a></li>
+                            <li> <a href = "#finisaje">Finisaje</a></li>
+                            <li> <a href = "#unelte">Unelte</a></li>
+                        </ul>
+                </li>
+                <li> <a href = "#servicii">Servicii</a></li>
+                <li> <a href = "#contact">Contact</a> </li>
+            </ul>   
+        </nav>
+
+        <main>
+        <div id = "grid-pagina">
         <section id = "prezentare">  <!-- Task 7 -->
-            <h3>Prezentare</h3>
+            <div id = "slider">
+                <figure>
+                    
+                        <img src = "resurse/imagini/istoric.jpg">
+                       <!-- <figcaption>Cu 30 de ani de experiență pe piața vasluiană, încercăm să oferim produse de cea mai înaltă calitate clienților noștri.</figcaption> -->
+                         <img src = "resurse/imagini/transport.jpg"> 
+                         <!--<figcaption> Transport gratuit pentru comenzile în valoare de peste 1500 de lei. </figcaption>-->
+                        <!-- <img src = "resurse/imagini/istoric.jpg"> -->
+                         <!--<figcaption>Cu 30 de ani de experiență pe piața vasluiană, încercăm să oferim produse de cea mai înaltă calitate clienților noștri.</figcaption>-->
+                        <img src = "resurse/imagini/consult.jpg">
+                         <!--<figcaption>Echipa noastră de oameni pasionați este dispusă să vă răspundă oricăror întrebări!</figcaption>-->
+                        <img src = "resurse/imagini/istoric.jpg">
+                         <!--<figcaption>Cu 30 de ani de experiență pe piața vasluiană, încercăm să oferim produse de cea mai înaltă calitate clienților noștri.</figcaption>-->
+                        
+                </figure>
+            </div>
             <section id = "istoric">
-                <h4>Istoric</h4>
+                <h3>Istoric</h3>        <!-- h3 in loc de h4 -->
                 <p>Cu 30 de ani de experiență pe piața vasluiană, încercăm să oferim produse de cea mai înaltă calitate clienților noștri, fie că sunt amatori sau antreprenori locali.</p>
+                <hr>
             </section>
             <section id = "locatii">
-                <h4>Locații</h4> 
+                <h3>Locații</h3> 
                 <p>Pentru a răspunde nevoilor clienților noștri, oferim o gamă largă de produse, de la <b>articole de menaj</b> până la <b>materiale de construcții</b> în toate cele trei locații ale noastre:</p>
                 <ul>                                                                                                                      <!-- Task 9 ^ -->
                     <li>BIG Construct</li>                                                                                                  <!-- Task 10.a ^ -->
                     <li>BIG Centru</li>
                     <li>BIG Traian</li>
                 </ul>
+                <hr>
             </section>
             <section id = "transport">
-                <h4>Transport</h4>
+                <h3>Transport</h3>
                 <p>                         <!-- Task 9 v -->
                     Tariful de bază pentru transportul mărfurilor este <s>1.5 lei/km</s> <ins>1 leu/km</ins>, însă pentru comenzile în valoare de peste 1500 de lei <b>transportul este gratuit!</b>
                 </p>                                                        <!-- Task 10.e ^ -->
             </section>
+        </section>
             <section id = "jobs">               
-                <h4>Locuri de muncă</h4>     <!-- Task 8.1 v -->
+                <h2>Locuri de muncă</h2>     <!-- Task 8.1 v -->
                 <p>Suntem în continuă căutare de oameni dedicați, onești și dornici de muncă pentru a putea oferi clienților noștri cele mai bune servicii. Dacă vrei să lucrezi într-un colectiv prietenos, cu un salariu atractiv și multiple beneficii, poți aplica pentru următoarele poziții:</p>
                 <ul>  <!-- Task 8.2 -->
                     <li>
@@ -68,28 +108,106 @@
                     </li>
                 </ul>
             </section>
+        <section id = "orar">
+            <h2>Program</h2>
+            <div id = "containertabel">
+            <table id = "tabel-orar">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Periodă</th>
+                        <th>Zi</th>
+                        <th>Magazin de construcții</th>
+                        <th>Magazine de articole menajere</th>
+                    </tr>
+                </thead>
+                 <tbody>
+                     <tr>
+                        <td></td>
+                         <td id = "sapt" rowspan = "5">Zile lucrătoare</td>
+                         <td>Luni</td>
+                         <td>07-18</td>
+                         <td>08-19</td>
+                     </tr>
+                     <tr>
+                         <td></td>
+                         <td>Marți</td>
+                         <td>07-18</td>
+                         <td>08-19</td>
+                     </tr>
+                     <tr>
+                        <td></td>
+                        <td>Miercuri</td>
+                        <td>07-18</td>
+                        <td>08-19</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Joi</td>
+                        <td>07-18</td>
+                        <td>08-19</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Vineri</td>
+                        <td>07-17</td>
+                        <td>08-18</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td id="weekend" rowspan = "2">Weekend și <br/>sărbători legale</td>
+                        <td>Sâmbătă</td>
+                        <td>08-14</td>
+                        <td>09-15</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Duminică</td>
+                        <td>08-14</td>
+                        <td>09-15</td>
+                    </tr>
+                 </tbody>
+            </table>
+        </div>
+        </section>
+        <section id = "calendar">
+            <h2>Anunțuri</h2>
+            <p><time datetime="2021-03-07">7 Martie 2021</time> Site-ul a fost creat</p>
+            <p><time datetime="2021-04-08">8 Aprilie 2021</time></p>
+            <p><time datetime="2021-04-28">28 Aprilie 2021</time></p>
+            <p><time datetime="2021-05-01">1 Mai 2021</time></p>
+        </section>
+        <section id = "server">
+            <h2>Statistici despre site și server</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit. Sed blandit libero volutpat sed cras ornare arcu dui vivamus.</p>
+        </section>
+        <section id = "utilizatori">
+            <h2>Utilizatori online</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit. Sed blandit libero volutpat sed cras ornare arcu dui vivamus.</p>
+        </section>
+        <section id = "stats">
+            <h2>Statistici despre utilizator</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit. Sed blandit libero volutpat sed cras ornare arcu dui vivamus.</p>
         </section>
         <section id = "utile">
-            <h3>Utile</h3>                                                          <!-- Task 11 v -->
+            <h2>Utile</h2>                
                 <section id = "mixare">
-                    <h4><a href="https://trycolors.com/">Mixare vopsele</a></h4>
+                    <h4><a href="https://trycolors.com/" target = "_blank" >Mixare vopsele</a></h4>
                     <p>Dacă nu știi ce nuanță de vopsea să alegi, încearcă această aplicație și vino apoi la noi ca să îți cumperi vopseaua perfectă!</p>
-                </section>
-                <section id = "izolatie">
-                    <h4>Ce termoizolație aleg pentru casa mea?</h4>
-                    <div class="important">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/zGi9hBqw-KQ" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                </section>
-                <section id = "incalzire">
-                    <h4>Avantajele încălzirii în pardoseală</h4>
-                    <div class = "important">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/wi9f0_NcBQY" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </section>   
+                <div class = "flex-iframe" >
+                    <div class = "videoframe">
+                        <iframe name="ifr-video" width="560" height="315" src="https://www.youtube.com/embed/zGi9hBqw-KQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                </section>
+                    <div class = "taburi-iframe">
+                        <a href = "https://www.youtube.com/embed/zGi9hBqw-KQ"  target = "ifr-video">Ce termoizolație aleg pentru casa mea? </a>
+                        <a href = "https://www.youtube.com/embed/wi9f0_NcBQY"  target = "ifr-video">Avantajele încălzirii în pardoseală </a>
+                     </div>
+                </div>
+            </div>
         </section>
         <section id = "intrebari">
-            <h3>întrebări și răspunsuri</h3>        <!-- Task 12 -->
+            <h2>Întrebări și răspunsuri</h2>        <!-- Task 12 -->
             <details>
                 <summary>
                     Onorați livrări în afara județului Vaslui?
@@ -115,11 +233,16 @@
                 </p>
             </details>
         </section>
-        <main>
-
+        </div>
+        <div id = "banner">
+            Acest website este un proiect școlar! Informațiile prezentate aici nu sunt reale!
+        </div>
         </main>
-        <footer>                                                                <!-- Task 13&14 -->
-            <a href = "#top">Înapoi la începutul paginii</a>
+        <footer>
+            <div id = "buton">
+                <a id="sus" href = "#top">&#5123</a>  
+                <span id = "tooltip">Înapoi sus</span>    
+            </div>                                                   <!-- Task 13&14 -->
             <address>
                 Telefon: <a href = "tel:0335409999"> 0335409999 </a> <br>
                 Adresă: Str. Decembrie nr. 99, Vaslui <br>

@@ -1,0 +1,130 @@
+body {
+  --menuheight: 3rem;
+}
+
+nav {
+  height: var(--menuheight);
+  width: 100%;
+  top: 0;
+  padding: 0;
+  background: var(--culoare-main);
+  z-index: 10;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+nav ul.meniu ul {
+  display: none;
+  position: absolute;
+  width: 100%;
+}
+
+nav ul.meniu > li {
+  float: left;
+  width: 100px;
+  position: relative;
+}
+
+nav ul.meniu > li > ul {
+  display: block;
+  -webkit-transform: scale(1, 0);
+          transform: scale(1, 0);
+  visibility: hidden;
+  -webkit-transition: -webkit-transform 500ms linear;
+  transition: -webkit-transform 500ms linear;
+  transition: transform 500ms linear;
+  transition: transform 500ms linear, -webkit-transform 500ms linear;
+}
+
+nav ul.meniu > li:hover > ul {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+  visibility: visible;
+}
+
+nav ul.meniu li {
+  text-align: center;
+  list-style-type: none;
+  background: var(--culoare-main);
+  cursor: pointer;
+}
+
+nav ul.meniu li a, nav ul.meniu li div {
+  text-decoration: none;
+  color: white;
+  display: block;
+  font-weight: bold;
+  height: var(--menuheight);
+  line-height: var(--menuheight);
+}
+
+nav ul, nav li {
+  padding: 0;
+  margin: 0;
+}
+
+ul.meniu > li > a::after {
+  content: '';
+  position: relative;
+  bottom: 7px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(10%, var(--culoare-main)), color-stop(60%, var(--culoare-secundara)));
+  background: linear-gradient(to right, var(--culoare-main) 10%, var(--culoare-secundara) 60%);
+  display: block;
+  height: 7px;
+  opacity: 0;
+  -webkit-transition: opacity 500ms ease-out;
+  transition: opacity 500ms ease-out;
+}
+
+ul.meniu > li > a:hover::after {
+  opacity: 1;
+}
+
+ul.meniu ul a:hover {
+  color: black;
+  background: var(--culoare-2);
+}
+
+ul.meniu ul a {
+  -webkit-transition: background 700ms linear;
+  transition: background 700ms linear;
+  -webkit-transition: color 500ms linear;
+  transition: color 500ms linear;
+}
+
+.fas {
+  display: none;
+}
+
+#hamburger {
+  display: none;
+  height: var(--menuheight);
+}
+
+#check-menu {
+  display: none;
+}
+
+#hamburger img {
+  height: 100%;
+  width: auto;
+}
+
+@-webkit-keyframes menu_grow {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes menu_grow {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=nav.css.map */
