@@ -1,0 +1,9 @@
+@media screen and (max-width:1200px){
+    .ascuns{
+        display:none;
+    }
+    #grid-galerie{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

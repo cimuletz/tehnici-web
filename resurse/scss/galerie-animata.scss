@@ -1,0 +1,7 @@
+@use '../resurse/scss/galerie-animata-frag' with (
+  $transformare_f: (rotateZ(0deg),rotateZ(135deg)),
+  $transformare_i: (skew(0deg), skew(90deg)),
+  $nrImag: <%= nrImagini %>,
+  $procent: <%= procent %>,
+  $procentRevenire: <%= procentRevenire %>
+);

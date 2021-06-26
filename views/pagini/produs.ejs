@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang = "ro">
+    <head>
+        <title>BIG Vaslui - produs</title>
+        <%- include("../fragmente/head") %>
+    </head>
+    <body>
+    <%- include("../fragmente/header") %>
+    <main>
+        <section>
+            <h2>Pagină produs</h2>
+            <article id = "articol">
+                <h3><span class = "name"> <%- locals.prod.nume %></span></h3>
+                <p>Preț:<span class = "pret"> <%- locals.prod.pret %></span>/<span class = "um"><%- locals.prod.um %></span></p>
+                <p>Descriere:<span class = "desc"> <%- locals.prod.descriere %></span></p>
+                <p>Categorie:<span class = "cat"> <%- locals.prod.categorie %></span></p>
+                <p>Tip produs:<span class = "tip"> <%- locals.prod.tip_produs %> </span> </p>
+                <p>Comandă minimă:<span class = "min_order"> <%- locals.prod.min_order %> </span> </p>
+                <p>Data adăugării:<span class = "data"> <%- locals.prod.data_adaugare %></span></p>
+            </article>
+                <figure class = "img-produs">
+                    <img src = "/resurse/imagini/produse/<%- locals.prod.imagine %>" alt = "[imagine <%-locals.prod.imagine %>]" />
+                </figure>
+            </article>
+        </section>
+    </main>
+        <%- include("../fragmente/footer.ejs") %>
+    </body>
+</html>

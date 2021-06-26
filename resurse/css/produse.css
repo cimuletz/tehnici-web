@@ -1,0 +1,91 @@
+main{
+    --padd-main:1rem;
+    padding-left:var(--padding-intern);
+    padding-right:var(--padding-intern);
+}
+
+.grid-produse{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    color: white;
+    padding-bottom: 1rem;
+}
+
+.grid-produse .produs{
+    display:grid;
+    grid-template-areas: "name name name"
+                         "col1 col1 col2" ;
+    grid-gap: 0.5rem;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 0.8rem 0.3rem grey;
+    overflow: hidden;
+}
+
+#col1{
+    grid-area: col1;
+    color: black;
+}
+#col2{
+    grid-area: col2;
+    padding-right: 1rem;
+    float:left;
+    color: black;
+}
+
+.grid-produse .name{
+    grid-area:name;
+}
+
+.grid-produse .produs h3{
+    background-color: var(--culoare-1);
+    text-align: center;
+    margin-top: 0;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.grid-produse .produs h3 a{
+    color: white;
+}
+
+.grid-produse .produs h3 a:hover{
+    color: var(--culoare-secundara);
+}
+
+.grid-produse .produs figure{
+    text-align: center;
+    width: 180%;
+}
+
+.grid-produse .produs figure img{
+    border:1px solid grey;
+    position: relative;
+    float:left;
+    margin-bottom: 0.5rem;
+}
+
+.grid-produse .produs .info{
+    
+}
+
+.grid-produse .produs .info p{
+    width:50%;
+    text-align:left;
+}
+
+.pret{
+    font-weight:bold;
+}
+.disp{
+    font-weight:bold;
+}
+.minima{
+    font-weight:bold;
+}
+.livrare{
+    font-weight:bold;
+}
+.grid-produse .produs .info span{
+    font-weight: normal;
+}

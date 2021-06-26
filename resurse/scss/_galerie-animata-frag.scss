@@ -1,0 +1,105 @@
+$transformare_f: (rotateZ(0deg),rotateZ(135deg)) !default;
+$transformare_i: (skew(0deg), skew(90deg)) !default;
+$nrImag: 7 !default;
+$procent: 14.285714 !default;
+$procentRevenire: 85.714287 !default;
+
+#sectiune-galerie-animata{
+	padding-left: var(--padding-intern);
+	padding-right: var(--padding-intern);
+}
+.galerie-a{
+	width:450px;
+	height:300px;
+	position:relative;
+	overflow:hidden;
+}
+.galerie-a figcaption{
+    position: absolute;
+    bottom: 0;
+    background: rgba(255,255,255,0.5);
+    width: 100%;
+    text-align: center;
+}
+.galerie-a figure{
+    position: relative;
+    left:-40px;
+	top:-16px;
+    width: 450px;
+    height: 300px;
+}
+
+.galerie-a img{
+    width: 100%;
+    object-fit: contain;
+}
+
+#galerie-animata figure{	
+	position:absolute;
+	z-index:0;
+	animation-name:galerie_animata;
+	animation-timing-function:linear;
+	animation-iteration-count:infinite;
+	animation-fill-mode:forwards;
+	animation-duration:#{3s*$nrImag};	
+	transform-origin:center center;
+}
+
+#galerie-animata{
+    border-image: url("https://www.w3schools.com/css/border.png") 30 / 19px round;
+}
+
+#galerie-animata:hover{
+    figure{
+            animation-play-state: paused;
+    }
+}
+
+@for $i from 1 through $nrImag{
+    #galerie-animata figure:nth-of-type(#{$i}){
+        animation-delay: ($nrImag - $i)*3s;
+    }
+}
+
+@keyframes galerie_animata{
+    0%{
+        z-index: 10;
+        opacity: 1;
+        clip-path: circle(70.2% at 50% 50%);
+    }
+    #{$procent/2}%{
+        clip-path: circle(70.2% at 50% 50%);
+    }
+   #{$procent/2 + $procent/3}%{
+        transform: rotateZ(0deg);
+        opacity: 1;
+    }
+    #{$procent}%{
+        z-index:10;
+        opacity:0;
+        transform: rotateZ(135deg);
+        clip-path: circle(25.2% at 50% 50%);
+    }
+    #{$procent + 1/10000}%{
+        z-index:-10;
+        transform: rotateZ(225deg);
+    }
+    #{$procentRevenire}%{
+        opacity:0;
+        transform:rotateZ(0deg);;
+        z-index:-10;
+    }
+    #{$procentRevenire + 1/10000}%{
+        z-index:10;
+    }
+    100%{
+        opacity:1;
+        z-index:0;
+    }
+}
+
+@media screen and (max-width:1200px){
+	#sectiune-galerie-animata{
+		display: none;
+	}
+}

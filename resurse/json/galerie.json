@@ -1,0 +1,258 @@
+{
+"cale_galerie":"resurse/imagini/galerie",
+"imagini":[
+    {
+        "cale_imagine":"expertiza.jpg",
+        "titlu":"Expertiză în construcții",
+        "descriere":"construcții",
+        "sfert_ora":"1"
+    },
+    {
+        "cale_imagine":"expertiza.jpg",
+        "titlu":"Expertiză în construcții",
+        "descriere":"construcții",
+        "sfert_ora":"1"
+    },
+    {
+        "cale_imagine":"expertiza.jpg",
+        "titlu":"Expertiză în construcții",
+        "descriere":"construcții",
+        "sfert_ora":"1"
+    },
+    {
+        "cale_imagine":"unelte.jpg",
+        "titlu":"Unelte pentru construcții",
+        "descriere":"unelte",
+        "sfert_ora":"1"
+    },
+    {
+        "cale_imagine":"unelte.jpg",
+        "titlu":"Unelte pentru construcții",
+        "descriere":"unelte",
+        "sfert_ora":"1"
+    },
+    {
+        "cale_imagine":"unelte.jpg",
+        "titlu":"Unelte pentru construcții",
+        "descriere":"unelte",
+        "sfert_ora":"1"
+    },
+    {
+        "cale_imagine":"siguranta.jpg",
+        "titlu":"Siguranță la locul de muncă",
+        "descriere":"siguranță",
+        "sfert_ora":"1"
+    },
+    {
+        "cale_imagine":"comunicare.jpg",
+        "titlu":"Comunicare eficientă",
+        "descriere":"comunicare",
+        "sfert_ora":"1"
+    },
+    {
+        "cale_imagine":"comunicare.jpg",
+        "titlu":"Comunicare eficientă",
+        "descriere":"comunicare",
+        "sfert_ora":"1"
+    },
+    {
+        "cale_imagine":"comunicare.jpg",
+        "titlu":"Comunicare eficientă",
+        "descriere":"comunicare",
+        "sfert_ora":"1"
+    },
+    {
+        "cale_imagine":"comunicare.jpg",
+        "titlu":"Comunicare eficientă",
+        "descriere":"comunicare",
+        "sfert_ora":"2"
+    },
+    {
+        "cale_imagine":"sustenabil.jpg",
+        "titlu":"Energie verde în construcții",
+        "descriere":"panouri solare",
+        "sfert_ora":"2"
+    },
+    {
+        "cale_imagine":"sustenabil.jpg",
+        "titlu":"Energie verde în construcții",
+        "descriere":"panouri solare",
+        "sfert_ora":"2"
+    },
+    {
+        "cale_imagine":"sustenabil.jpg",
+        "titlu":"Energie verde în construcții",
+        "descriere":"panouri solare",
+        "sfert_ora":"2"
+    },
+    {
+        "cale_imagine":"sustenabil.jpg",
+        "titlu":"Energie verde în construcții",
+        "descriere":"panouri solare",
+        "sfert_ora":"2"
+    },
+    {
+        "cale_imagine":"sustenabil.jpg",
+        "titlu":"Energie verde în construcții",
+        "descriere":"panouri solare",
+        "sfert_ora":"2"
+    },
+    {
+        "cale_imagine":"expertiza.jpg",
+        "titlu":"Expertiză în construcții",
+        "descriere":"construcții",
+        "sfert_ora":"2"
+    },
+    {
+        "cale_imagine":"expertiza.jpg",
+        "titlu":"Expertiză în construcții",
+        "descriere":"construcții",
+        "sfert_ora":"2"
+    },
+    {
+        "cale_imagine":"expertiza.jpg",
+        "titlu":"Expertiză în construcții",
+        "descriere":"construcții",
+        "sfert_ora":"2"
+    },
+    {
+        "cale_imagine":"sustenabil.jpg",
+        "titlu":"Energie verde în construcții",
+        "descriere":"panouri solare",
+        "sfert_ora":"2"
+    },
+    {
+        "cale_imagine":"tamplarie.jpg",
+        "titlu":"Pentru amatori",
+        "descriere":"tamplar in atelier",
+        "sfert_ora":"2"
+    },
+    {
+        "cale_imagine":"infrastructura.jpg",
+        "titlu":"Infrastructură informatică",
+        "descriere":"inginer",
+        "sfert_ora":"3"
+    },
+    {
+        "cale_imagine":"comunicare.jpg",
+        "titlu":"Comunicare eficientă",
+        "descriere":"comunicare",
+        "sfert_ora":"3"
+    },
+    {
+        "cale_imagine":"unelte.jpg",
+        "titlu":"Unelte pentru construcții",
+        "descriere":"unelte",
+        "sfert_ora":"3"
+    },
+    {
+        "cale_imagine":"unelte.jpg",
+        "titlu":"Unelte pentru construcții",
+        "descriere":"unelte",
+        "sfert_ora":"3"
+    },
+    {
+        "cale_imagine":"unelte.jpg",
+        "titlu":"Unelte pentru construcții",
+        "descriere":"unelte",
+        "sfert_ora":"3"
+    },
+    {
+        "cale_imagine":"infrastructura.jpg",
+        "titlu":"Infrastructură informatică",
+        "descriere":"inginer",
+        "sfert_ora":"3"
+    },
+    {
+        "cale_imagine":"comunicare.jpg",
+        "titlu":"Comunicare eficientă",
+        "descriere":"comunicare",
+        "sfert_ora":"3"
+    },
+    {
+        "cale_imagine":"comunicare.jpg",
+        "titlu":"Comunicare eficientă",
+        "descriere":"comunicare",
+        "sfert_ora":"3"
+    },
+    {
+        "cale_imagine":"comunicare.jpg",
+        "titlu":"Comunicare eficientă",
+        "descriere":"comunicare",
+        "sfert_ora":"3"
+    },
+    {
+        "cale_imagine":"infrastructura.jpg",
+        "titlu":"Infrastructură informatică",
+        "descriere":"inginer",
+        "sfert_ora":"3"
+    },
+    {
+        "cale_imagine":"utilaj.jpg",
+        "titlu":"Utilaje de mare tonaj",
+        "descriere":"excavator",
+        "sfert_ora":"4"
+    },
+    {
+        "cale_imagine":"planificare.jpg",
+        "titlu":"Planificare realistă",
+        "descriere":"planuri de executie",
+        "sfert_ora":"4"
+    },
+    {
+        "cale_imagine":"planificare.jpg",
+        "titlu":"Planificare realistă",
+        "descriere":"planuri de executie",
+        "sfert_ora":"4"
+    },
+    {
+        "cale_imagine":"planificare.jpg",
+        "titlu":"Planificare realistă",
+        "descriere":"planuri de executie",
+        "sfert_ora":"4"
+    },
+    {
+        "cale_imagine":"tamplarie.jpg",
+        "titlu":"Pentru amatori",
+        "descriere":"tamplar in atelier",
+        "sfert_ora":"4"
+    },
+    {
+        "cale_imagine":"tamplarie.jpg",
+        "titlu":"Pentru amatori",
+        "descriere":"tamplar in atelier",
+        "sfert_ora":"4"
+    },
+    {
+        "cale_imagine":"expertiza.jpg",
+        "titlu":"Expertiză în construcții",
+        "descriere":"construcții",
+        "sfert_ora":"4"
+    },
+    {
+        "cale_imagine":"expertiza.jpg",
+        "titlu":"Expertiză în construcții",
+        "descriere":"construcții",
+        "sfert_ora":"4"
+    },
+    {
+        "cale_imagine":"expertiza.jpg",
+        "titlu":"Expertiză în construcții",
+        "descriere":"construcții",
+        "sfert_ora":"4"
+    },
+    {
+        "cale_imagine":"casa.jpg",
+        "titlu":"Constructii private",
+        "descriere":"casa in constructie",
+        "sfert_ora":"4"
+    },
+    {   
+        "cale_imagine":"urban.jpg",
+        "titlu":"Constructii publice",
+        "descriere":"autostrada in constructie",
+        "sfert_ora":"4",
+        "cc":"File:Honolulu rail project construction in Waipahu near Fort Weaver Road 2015-07-29.jpg by Musashi1600 is licensed under CC BY 3.0"
+    }
+    ]   
+}

@@ -1,0 +1,54 @@
+#banner{
+    visibility: visible;
+    position: fixed;
+    margin: auto;
+    top: 0px;
+    width: 80vw;
+    color:white;
+    font-size: 30px;
+    line-height: 5rem;
+    text-align: center;
+    border: 2px dotted black;
+    background: var(--culoare-marcare);
+    border-radius: 10px;
+}
+
+figure{
+    display: none;
+}
+
+.flex-iframe{
+    display:none;
+}
+#buton{
+    display: none;
+}
+a:link{
+    text-decoration: none;
+}
+h1{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 250%;
+}
+nav{display: none;}
+
+.watermark {
+    display: inline;
+    position: fixed !important;
+    opacity: 0.65;
+    font-size: 3em;
+    width: 100px;
+    height: 2cm;
+    z-index: 1000;
+    border: 5px double black;
+}
+
+header {page-break-after: always;}
+
+footer {page-break-before: always;}
+
+body{
+    margin-left: 2.5cm;
+    margin-right: 0.5cm; 
+}

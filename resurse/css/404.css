@@ -1,0 +1,13 @@
+#sectiune404{
+    padding: 1rem;
+    padding-left: 2rem;
+}
+#imagine404{
+    position: relative;
+    left:-3rem;
+}
+#imagine404 img{
+    padding-left: 0rem;
+    width: 35%;
+    height: auto;
+}

@@ -1,0 +1,46 @@
+h2{
+    padding: 1rem;
+}
+
+#articol{
+    margin: 0 auto;
+    width: 70%;
+    box-shadow: 0px 0px 10px 10px grey;
+    padding: 0.5rem;
+}
+
+#articol p{
+    color: white;
+    margin: 0;
+    padding: 0.5rem;
+    font-weight: bold;
+    font-size:1.2rem;
+}
+
+#articol p span{
+    font-weight: normal;
+}
+
+#articol p:nth-of-type(even){
+    background-color: var(--culoare-bg);
+}
+
+#articol p:nth-of-type(odd){
+    background-color: var(--culoare-main);
+}
+
+.img-produs{
+    text-align: center;
+}
+.img-produs img{
+    .object-fit: contain;
+    width: 50%;
+    max-height: 600px;
+}
+
+@media screen and (max-width: 700px){
+    #articol{
+        margin:0 auto;
+        width:95%;
+    }
+}

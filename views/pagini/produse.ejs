@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang = "ro">
+    <head>
+        <title>BIG Vaslui - produse</title>
+        <%- include("../fragmente/head.ejs") %>
+    </head>
+    <body>
+    <%- include("../fragmente/header.ejs") %>
+    <main>
+        <label> Nume produs: <input type = "text" id = "inp-nume"></label><br>
+        <label> Preț minim:<input type = "range" id = "inp-pret" value = "0" min = "0" max = "1000"></label><br>
+        <label> Comandă minimă: <input type = "radio" name = "com" id = "toate" value = "toate">
+                                <label for = "toate">toate</label>
+                                <input type = "radio" name = "com" id = "cinci" value = "5">
+                                <label for = "cinci">0-5</label>
+                                <input type = "radio" name = "com" id = "zece" value = "10">
+                                <label for = "zece">6-10</label>
+                                <input type = "radio" name = "com" id = "maxim" value = "15">
+                                <label for = "maxim">11-15</label><br>
+        </label>
+        <label> Oferim livrare:
+            <select id = "inp-livrare">
+                <option value = "toate">toate</option>
+                <option value = "true ">da</option>
+                <option value = "false ">nu</option>
+            </select>
+        </label><br>
+        <label> Disponibilitate:
+            <input class = "check" type="checkbox" id="disponibil" name="disponibil" value="disponibil">
+            <label for="disponibil"> disponibil</label>
+            <input class = "check" type="checkbox" id="limitat" name="limitat" value="limitat">
+            <label for="limitat"> limitat</label>
+            <input class = "check" type="checkbox" id="comanda" name="comanda" value="comanda">
+            <label for="comanda"> comanda</label>
+        </label>
+        <p>
+            <button id="sortCresc">Sorteaza crescator dupa comanda minima/pret</button>
+            <button id="sortDescresc">Sorteaza descrescator dupa comanda minima/pret</button>
+            <button id="filtrare">Filtreaza</button>
+            <button id="resetare">Reseteaza</button>
+            <button id = "pretmaxim"> Pretul maxim al unui produs </button>
+        </p>
+       <h2>Produse</h2>
+       <div class = "grid-produse">
+           <% for( let prod of locals.produse){ %>
+                <article class = "produs">
+                    <h3 class = "name">Nume: <a href = "/produs/<%-prod.id %>"><span class = "val-nume"> <%- prod.nume %> </span></a></h3>
+                    <section id = "col1">
+                        <div class = "info">
+                            <ul>
+                                <li>
+                                    <p class = "pret">Preț:<span class = "val-pret"> <%- prod.pret %></span>/<span class = "um"><%- prod.um %></span></p>
+                                </li>
+                                <li>
+                                    <p class = "disp">Disponibilitate:<span class = "val-disp"> <%- prod.categorie %></span></p>
+                                </li>
+                                <li>
+                                    <p class = "minima">Data adaugare:<span class = "val-minima"><time datetime= "DD-MM-YYY"><%- prod.data_adaugare %> </time></span></p>
+                                </li>
+                                <li>
+                                    <p class = "livrare">Livrare:<span class = "val-livrare"><%- prod.livrare %> </span></p>
+                                </li>
+                            </ul>
+                        </div>
+                        <figure>
+                            <img src="/resurse/imagini/produse/<%- prod.imagine %>" style="width:50%;height:auto;" alt="[imagine <%- prod.nume %>]" />
+                        </figure>
+                    </section>
+                    <section id = "col2">
+                        <ul>
+                            <li>
+                                <p class = "tip">Categorie: <span class = "val-tip"><%- prod.tip_produs %></span></p>
+                            </li>
+                            <li>
+                                <p class = "descriere">Descriere: <span><%- prod.descriere %></span></p>
+                            </li>
+                        </ul>
+                    </section>
+                </article>
+          <% } %>
+       </div>
+    </main>
+        <%- include("../fragmente/footer.ejs") %>
+    </body>
+</html>

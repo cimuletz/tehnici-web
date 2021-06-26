@@ -1,0 +1,234 @@
+<!DOCTYPE html> <!-- Task1 -->
+<html lang = "ro">
+    <head>
+        <title>BIG Vaslui</title>
+        <%- include("../fragmente/head") %>  
+        <link rel="stylesheet" href="/resurse/css/galerie-animata.css" type="text/css" />                        <!-- TASK 3 -->
+    </head>                                                         <!-- TASK 3 -->
+    <body>                                                          <!-- TASK 3 -->
+    
+        <%- include ("../fragmente/header") %>
+        <main>
+        <div id = "grid-pagina">
+        <section id = "prezentare">  <!-- Task 7 -->
+            <div id = "slider">
+                <figure>
+                    
+                        <img src = "resurse/imagini/istoric.jpg">
+                       <!-- <figcaption>Cu 30 de ani de experiență pe piața vasluiană, încercăm să oferim produse de cea mai înaltă calitate clienților noștri.</figcaption> -->
+                         <img src = "resurse/imagini/transport.jpg"> 
+                         <!--<figcaption> Transport gratuit pentru comenzile în valoare de peste 1500 de lei. </figcaption>-->
+                        <!-- <img src = "resurse/imagini/istoric.jpg"> -->
+                         <!--<figcaption>Cu 30 de ani de experiență pe piața vasluiană, încercăm să oferim produse de cea mai înaltă calitate clienților noștri.</figcaption>-->
+                        <img src = "resurse/imagini/consult.jpg">
+                         <!--<figcaption>Echipa noastră de oameni pasionați este dispusă să vă răspundă oricăror întrebări!</figcaption>-->
+                        <img src = "resurse/imagini/istoric.jpg">
+                         <!--<figcaption>Cu 30 de ani de experiență pe piața vasluiană, încercăm să oferim produse de cea mai înaltă calitate clienților noștri.</figcaption>-->
+                        
+                </figure>
+            </div>
+            <section id = "istoric">
+                <h3><!--<div id="clepsidra" class="fa-stack fa-4x">
+                    <i class="fa fa-stack-1x fa-hourglass-start"></i>
+                    <i class="fa fa-stack-1x fa-hourglass-half"></i>
+                    <i class="fa fa-stack-1x fa-hourglass-end"></i>
+                    <i class="fa fa-stack-1x fa-hourglass-end"></i>
+                    <i class="fa fa-stack-1x fa-hourglass-o"></i>
+                  </div>--> <i class="fas fa-hourglass-start"></i> Istoric</h3>    
+                <p>Cu 30 de ani de experiență pe piața vasluiană, încercăm să oferim produse de cea mai înaltă calitate clienților noștri, fie că sunt amatori sau antreprenori locali.</p>
+                <hr>
+            </section>
+            <section id = "locatii">
+                <h3><i class="fas fa-store-alt"></i> Locații</h3> 
+                <p>Pentru a răspunde nevoilor clienților noștri, oferim o gamă largă de produse, de la <b>articole de menaj</b> până la <b>materiale de construcții</b> în toate cele trei locații ale noastre:</p>
+                <ul>                                                                                                                      <!-- Task 9 ^ -->
+                    <li>BIG Construct</li>                                                                                                  <!-- Task 10.a ^ -->
+                    <li>BIG Centru</li>
+                    <li>BIG Traian</li>
+                </ul>
+                <hr>
+            </section>
+            <section id = "transport">
+                <h3><i class="fas fa-truck"></i> Transport</h3>
+                <p>                         <!-- Task 9 v -->
+                    Tariful de bază pentru transportul mărfurilor este <s>1.5 lei/km</s> <ins>1 leu/km</ins>, însă pentru comenzile în valoare de peste 1500 de lei <b>transportul este gratuit!</b>
+                </p>                                                        <!-- Task 10.e ^ -->
+            </section>
+        </section>
+            <section id = "jobs">               
+                <h2>Locuri de muncă</h2>     <!-- Task 8.1 v -->
+                <p>Suntem în continuă căutare de oameni dedicați, onești și dornici de muncă pentru a putea oferi clienților noștri cele mai bune servicii. Dacă vrei să lucrezi într-un colectiv prietenos, cu un salariu atractiv și multiple beneficii, poți aplica pentru următoarele poziții:</p>
+                <ul>  <!-- Task 8.2 -->
+                    <li>
+                        Lucrător comercial
+                    </li>
+                    <li>
+                        Stivuitorist - este necesar certificatul <abbr title = "Inspecția de Stat pentru Controlul Cazanelor, Recipientelor sub Presiune și Instalațiilor de Ridicat.">ISCIR</abbr>
+                    </li>                                                       <!-- Task 10.f ^ -->
+                    <li>
+                        Șofer profesionist - categoriile B,C
+                    </li>
+                </ul>
+            </section>
+        <section id = "orar">
+            <h2>Program</h2>
+            <div id = "containertabel">
+            <table id = "tabel-orar">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Periodă</th>
+                        <th>Zi</th>
+                        <th>Magazin de construcții</th>
+                        <th>Magazine de articole menajere</th>
+                    </tr>
+                </thead>
+                 <tbody>
+                     <tr>
+                        <td></td>
+                         <td id = "sapt" rowspan = "5">Zile lucrătoare</td>
+                         <td>Luni</td>
+                         <td>07-18</td>
+                         <td>08-19</td>
+                     </tr>
+                     <tr>
+                         <td></td>
+                         <td>Marți</td>
+                         <td>07-18</td>
+                         <td>08-19</td>
+                     </tr>
+                     <tr>
+                        <td></td>
+                        <td>Miercuri</td>
+                        <td>07-18</td>
+                        <td>08-19</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Joi</td>
+                        <td>07-18</td>
+                        <td>08-19</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Vineri</td>
+                        <td>07-17</td>
+                        <td>08-18</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td id="weekend" rowspan = "2">Weekend și <br/>sărbători legale</td>
+                        <td>Sâmbătă</td>
+                        <td>08-14</td>
+                        <td>09-15</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Duminică</td>
+                        <td>08-14</td>
+                        <td>09-15</td>
+                    </tr>
+                 </tbody>
+            </table>
+        </div>
+        </section>
+        <section id = "calendar">
+            <h2>Anunțuri</h2>
+            <p><time datetime="2021-03-07">7 Martie 2021</time> Site-ul a fost creat</p>
+            <p><time datetime="2021-04-08">8 Aprilie 2021</time></p>
+            <p><time datetime="2021-04-28">28 Aprilie 2021</time></p>
+            <p><time datetime="2021-05-01">1 Mai 2021</time></p>
+        </section>
+        <section id = "server">
+            <h2>Statistici despre site și server</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit. Sed blandit libero volutpat sed cras ornare arcu dui vivamus.</p>
+        </section>
+        <section id = "utilizatori">
+            <h2>Utilizatori online</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit. Sed blandit libero volutpat sed cras ornare arcu dui vivamus.</p>
+        </section>
+        <section id = "stats">
+            <h2>Statistici despre utilizator</h2>
+            <p>Adresa IP a utilizatorului: <%- locals.ip %></p>
+        </section>
+        <section id = "utile">
+            <h2>Utile</h2>                
+                <section id = "mixare">
+                    <h4><a href="https://trycolors.com/" target = "_blank" >Mixare vopsele</a></h4>
+                    <p>Dacă nu știi ce nuanță de vopsea să alegi, încearcă această aplicație și vino apoi la noi ca să îți cumperi vopseaua perfectă!</p>
+                </section>   
+                <div class = "flex-iframe" >
+                    <div class = "videoframe">
+                        <iframe name="ifr-video" width="560" height="315" src="https://www.youtube.com/embed/zGi9hBqw-KQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class = "taburi-iframe">
+                        <a href = "https://www.youtube.com/embed/zGi9hBqw-KQ"  target = "ifr-video">Ce termoizolație aleg pentru casa mea? </a>
+                        <a href = "https://www.youtube.com/embed/wi9f0_NcBQY"  target = "ifr-video">Avantajele încălzirii în pardoseală </a>
+                     </div>
+                </div>
+            </div>
+        </section>
+        <section id = "intrebari">
+            <h2>Întrebări și răspunsuri</h2>        <!-- Task 12 -->
+            <details>
+                <summary>
+                    Onorați livrări în afara județului Vaslui?
+                </summary>
+                <p>
+                    Din păcate, nu obișnuim să livrăm în afara județului, însă se pot face excepții în funcție de valoarea comenzii.
+                </p>
+            </details>
+            <details>
+                <summary>
+                    Pot cere un sfat dacă nu sunt sigur de produsul pe care îl doresc?
+                </summary>
+                <p>
+                    Desigur, echipa noastră este formată din oameni pasionați care vor încerca să vă ofere explicații asupra oricărui produs.
+                </p>
+            </details>
+            <details>
+                <summary>
+                    Care este timpul uzual de livrare?
+                </summary>
+                <p>
+                    în funcție de traficul de clienți, livrările sunt onorate fie în aceeași zi, fie ziua următoare. Dacă produsul nu se află pe stoc, vă puteți aștepta la un timp de livrare de maxim o săptămână.
+                </p>
+            </details>
+        </section>
+        </div>
+        <%- include("../fragmente/galerie-statica.ejs") %>
+        <section id="sectiune-galerie-animata">
+            <h2>Galerie</h2>
+            <div id="galerie-animata" class="galerie-a">
+                <% for (let imag of locals.animata){  %>
+                <figure>
+                    <picture>
+                        <img src="/<%-imag.mare%>" alt="imag.descriere"/>
+                    </picture>
+                    <figcaption><%-imag.titlu%></figcaption>
+                </figure>
+                <% } %>
+            </div>
+        </section>
+        <div id="container-video">
+            <h2>Aplicarea siliconului sanitar</h2>
+            <div id="centrare-video">
+                <div id="clip-video">
+                    <div id="stil-video">
+                        <video width="320" height="240"  poster = "resurse/imagini/silicon.jpg" playsinline controls loop preload = "autp">
+                            <source src="resurse/video/video.mp4" type="video/mp4">
+                            <source src="resurse/video/video.ogv" type="video/ogv">
+                            <track default src="resurse/video/tracks/captions-romana.vtt" kind="captions" srclang="ro" label="romana">
+                            <track src="resurse/video/tracks/captions-engleza.vtt" kind="captions" srclang="en" label="engleza">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id = "banner">
+            Acest website este un proiect școlar! Informațiile prezentate aici nu sunt reale!
+        </div>
+        </main>
+            <%- include("../fragmente/footer.ejs") %>
+    </body>
+</html>

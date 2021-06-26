@@ -24,11 +24,13 @@ html{
     grid-area: welcome;
 }
 
-iframe{
+.iframe{
     max-width: 700px;
-    width: 50vw;
+    width:100%;
 }
-
+.videoframe{
+    width:50%;
+}
 #containertabel{
     overflow-x: scroll;
 }
