@@ -39,6 +39,7 @@
             <button id="filtrare">Filtreaza</button>
             <button id="resetare">Reseteaza</button>
             <button id = "pretmaxim"> Pretul maxim al unui produs </button>
+            <p id = "infoMaxim"></p>
         </p>
        <h2>Produse</h2>
        <div class = "grid-produse">
@@ -55,7 +56,10 @@
                                     <p class = "disp">Disponibilitate:<span class = "val-disp"> <%- prod.categorie %></span></p>
                                 </li>
                                 <li>
-                                    <p class = "minima">Data adaugare:<span class = "val-minima"><time datetime= "DD-MM-YYY"><%- prod.data_adaugare %> </time></span></p>
+                                    <p class = "data">Data adaugare:<span class = "val-data"><time datetime= "DD-MM-YYY"><%- prod.data_adaugare %> </time></span></p>
+                                </li>
+                                <li>
+                                    <p class = "minima">Comanda minima:<span class = "val-minima"><%- prod.min_order %></span></p>
                                 </li>
                                 <li>
                                     <p class = "livrare">Livrare:<span class = "val-livrare"><%- prod.livrare %> </span></p>

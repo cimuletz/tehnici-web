@@ -14,14 +14,14 @@
 }
 
 figure{
-    display: none;
+    display: none !important;
 }
 
 .flex-iframe{
-    display:none;
+    display:none !important;
 }
 #buton{
-    display: none;
+    display: none !important;
 }
 a:link{
     text-decoration: none;
@@ -31,7 +31,7 @@ h1{
     text-decoration: underline;
     font-size: 250%;
 }
-nav{display: none;}
+nav{display: none !important;}
 
 .watermark {
     display: inline;
